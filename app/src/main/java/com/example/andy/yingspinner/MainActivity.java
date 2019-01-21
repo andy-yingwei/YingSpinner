@@ -28,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
             list.add("下拉列表项"+(i+1));
         }
 
-        myYingSpinner1.setItemsData(list);
+        myYingSpinner1.setItemData(list);
+        myYingSpinner1.setChoose(2);
         myYingSpinner1.setTextViewStyle(20, Color.BLACK,false, Color.WHITE);
-        //myYingSpinner1.setItemTextSize(20);
-        myYingSpinner2.setItemsData(list);
+
+        myYingSpinner2.setItemData(list);
         myYingSpinner2.setTextViewStyle(20, Color.BLACK,true, Color.WHITE);
 
         button=findViewById(R.id.button);

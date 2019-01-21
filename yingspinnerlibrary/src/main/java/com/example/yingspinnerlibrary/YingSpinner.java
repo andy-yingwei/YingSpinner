@@ -108,9 +108,14 @@ public class YingSpinner extends LinearLayout {
     }
 
     //设置下拉列表数据
-    public void setItemsData(ArrayList<String> itemList){
+    public void setItemData(ArrayList<String> itemList){
         this.itemList = itemList;
         myTextView.setText(itemList.get(0));
+    }
+
+    //设置数据默认修选项
+    public void setChoose(int position){
+        myTextView.setText(itemList.get(position));
     }
 
     //取得TextView内容
